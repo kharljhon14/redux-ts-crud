@@ -1,0 +1,37 @@
+.header {
+   display: flex;
+   background-color: $color-primary-dark;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1.7rem 0;
+
+   &__logo {
+      text-transform: uppercase;
+      margin-left: 2rem;
+      color: $color-text-primary-light;
+
+   }
+   &__nav-list {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      font-size: 1.75rem;
+   }
+
+   &__nav-item {
+      & a:link,
+      & a:visited {
+         text-decoration: none;
+         font-weight: 300;
+         color: $color-text-primary-light;
+      }
+
+      & :not(:last-child){
+        margin-left: 2rem;
+      }
+   }
+
+   & :last-child{
+    margin-right: 2rem;
+   }
+}
