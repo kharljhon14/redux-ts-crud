@@ -20,7 +20,7 @@ const Form = () => {
          id: generateUniqueID(),
          date: getCurrentDate(),
          lastName: lastNameInput.current?.value || "",
-         firtName: firtNameInput.current?.value || "",
+         firstName: firtNameInput.current?.value || "",
          address: addressInput.current?.value || "",
          email: emailInput.current?.value || "",
       };

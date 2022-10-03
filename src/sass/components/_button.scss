@@ -8,4 +8,9 @@
     background-color: $color-primary;
     color: $color-primary-dark;
     text-decoration: none;
+
+    &-dark{
+        background-color: $color-primary-dark;
+        color: $color-primary-light;
+    }
 }

@@ -3,11 +3,11 @@
    border-collapse: collapse;
    background-color: $color-primary-light;
 
-   &__header{
-    text-align: center;
-    margin-bottom: 2.75rem;
-    text-transform: uppercase;
-    color: $color-primary-dark;
+   &__header {
+      text-align: center;
+      margin-bottom: 2.75rem;
+      text-transform: uppercase;
+      color: $color-primary-dark;
    }
 
    &__head {
@@ -28,9 +28,18 @@
          border: 1px solid $color-text-primary;
          padding: 2rem;
          font-size: 1.75rem;
-      } 
-      & tr:nth-child(even){
-        background-color: $color-text-primary-light;
+      }
+
+      & tr:nth-child(even) {
+         background-color: $color-text-primary-light;
+      }
+
+      & tr td:last-child {
+         text-align: center;
+
+         & button:not(:last-child) {
+            margin-right: 2rem;
+         }
       }
    }
 }
