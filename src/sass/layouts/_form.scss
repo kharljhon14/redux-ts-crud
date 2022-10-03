@@ -1,14 +1,16 @@
-.form__container {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+.form__container{
+   margin: auto;
+   width: 100%;
+   height: 100%;
 }
+
 
 .form__header {
    text-transform: uppercase;
    color: $color-primary-dark;
-   margin-top: 15rem;
-   margin-bottom: 2.7rem;
+   margin-bottom: 3rem;
+   text-align: center;
+
 }
 
 .form {
@@ -16,17 +18,20 @@
    flex-direction: column;
    align-content: center;
    justify-content: center;
-   background-color: $color-primary-dark;
+   background-color: $color-primary-light;
    padding: 3rem 2rem;
-   border-radius: .6rem;
-   width: 70rem;
+   border-radius: 0.6rem;
+   width: 40vw;
+   box-shadow: 0 1rem 1rem rgba($color-text-primary, $alpha: .3);
+   margin: auto;
 
    &__input {
       margin-bottom: 2.7rem;
       border-radius: 0.6rem;
+      font-size: 1.75rem;
    }
 
    &__btn {
-      width: 12rem;
+      width: 15rem;
    }
 }
